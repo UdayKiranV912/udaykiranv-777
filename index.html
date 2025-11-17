@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SevenX7 - Seamless Integration, Sustainable Growth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#6A0DAD',
+              'primary-dark': '#4B0082',
+              'secondary': '#00F0FF',
+              'dark-bg': '#0D0D1A',
+              'light-text': '#E0E0E0',
+              'dark-text': '#A0A0E0',
+              'brand-cyan': '#00F0FF',
+              'brand-red': '#FF003C',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'fade-in': 'fadeIn 1s ease-out forwards',
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'border-pulse': 'borderPulse 3s ease-in-out infinite',
+              'badge-pulse': 'badgePulse 2.5s ease-in-out infinite',
+              'draw-line': 'drawLine 2s ease-out forwards',
+              'bg-pan': 'bgPan 50s ease-in-out infinite',
+              'scale-in': 'scaleIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+              'subtle-float': 'subtleFloat 8s ease-in-out infinite',
+              'scale-out-fade': 'scaleOutFade 0.6s ease-in forwards',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(-3%)' },
+                '50%': { transform: 'translateY(3%)' },
+              },
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              fadeInUp: {
+                '0%': { opacity: 0, transform: 'translateY(20px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              },
+              subtleFloat: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-8px)' },
+              },
+              borderPulse: {
+                '0%, 100%': { borderColor: 'rgba(0, 240, 255, 0.3)', boxShadow: '0 0 10px rgba(0, 240, 255, 0.2)' },
+                '50%': { borderColor: 'rgba(0, 240, 255, 0.7)', boxShadow: '0 0 25px rgba(0, 240, 255, 0.5)' },
+              },
+              badgePulse: {
+                '0%, 100%': { transform: 'scale(1)', opacity: '1' },
+                '50%': { transform: 'scale(1.08)', opacity: '0.7' },
+              },
+              drawLine: {
+                'to': { strokeDashoffset: 0 },
+              },
+              bgPan: {
+                '0%, 100%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+              },
+              scaleIn: {
+                '0%': { opacity: 0, transform: 'scale(0.95)' },
+                '100%': { opacity: 1, transform: 'scale(1)' },
+              },
+              scaleOutFade: {
+                '0%': { opacity: 1, transform: 'scale(1)' },
+                '100%': { opacity: 0, transform: 'scale(0.95)' },
+              }
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      @keyframes cyber-glitch {
+        0% { transform: translate(0) skew(0); clip-path: inset(10% 0 80% 0); }
+        10% { transform: translate(-2px, 2px) skew(5deg); clip-path: inset(85% 0 5% 0); }
+        30% { transform: translate(2px, -2px) skew(-5deg); clip-path: inset(40% 0 40% 0); }
+        50% { transform: translate(0) skew(0); clip-path: inset(95% 0 2% 0); }
+        70% { transform: translate(-3px, 1px) skew(3deg); clip-path: inset(10% 0 80% 0); }
+        90% { transform: translate(3px, -1px) skew(-3deg); clip-path: inset(70% 0 10% 0); }
+        100% { transform: translate(0) skew(0); clip-path: inset(10% 0 80% 0); }
+      }
+      .animate-cyber-glitch { animation: cyber-glitch 1s linear infinite; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-dark-bg text-light-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
