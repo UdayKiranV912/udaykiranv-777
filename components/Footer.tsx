@@ -52,10 +52,10 @@ const Footer: React.FC<FooterProps> = ({ onNewsClick }) => {
           <div className="flex flex-col items-center md:items-center">
             <h3 className="text-lg font-semibold text-light-text">Contact Us</h3>
             <div className="flex items-center space-x-4 mt-4">
-              <a href="mailto:support@sevenx7.com" className="text-dark-text hover:text-secondary transition-colors" aria-label="Email">
+              <a href="mailto:udaykiranv.312179@gmail.com" className="text-dark-text hover:text-secondary transition-colors" aria-label="Email">
                 <MailIcon />
               </a>
-              <a href="https://wa.me/910123456789?text=Hello%2C%2I%20need%20support%20regarding%20the%20SevenX7%20platform." target="_blank" rel="noopener noreferrer" className="text-dark-text hover:text-secondary transition-colors" aria-label="WhatsApp">
+              <a href="https://wa.me/9148908395?text=Hello%2C%2I%20need%20support%20regarding%20the%20SevenX7%20platform." target="_blank" rel="noopener noreferrer" className="text-dark-text hover:text-secondary transition-colors" aria-label="WhatsApp">
                 <WhatsAppIcon />
               </a>
             </div>
